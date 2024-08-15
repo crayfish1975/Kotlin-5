@@ -36,4 +36,8 @@ object Taz: Car {
     override fun wheelToLeft(degrees: Int) {
         throw NotImplementedError("Руля нет")
     }
+
+    override fun receiveFuel(liters: Int) {
+        throw IllegalArgumentException("Саня, бачок потик!!!")
+    }
 }
