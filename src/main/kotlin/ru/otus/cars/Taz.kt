@@ -12,6 +12,9 @@ object Taz: Car {
      */
     override val color: String = "Ржавый"
 
+    override val mouth: TankMouth
+        get() = throw NotImplementedError("Сюда соляру надо")
+
     /**
      * Следит за машиной
      */
@@ -38,6 +41,6 @@ object Taz: Car {
     }
 
     override fun receiveFuel(liters: Int) {
-        throw IllegalArgumentException("Саня, бачок потик!!!")
+        throw NotImplementedError("Саня, бачок потик!!!")
     }
 }
